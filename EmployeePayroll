@@ -64,3 +64,14 @@ mysql> insert into employee_payroll(name,salary,startDate)values('Sana',80000,'2
 Query OK, 1 row affected (0.15 sec)
 
 mysql>
+
+mysql> select * from employee_payroll;
++----+------+--------+------------+
+| id | name | salary | startDate  |
++----+------+--------+------------+
+|  1 | Rani |  50000 | 2022-06-01 |
+|  2 | Jia  |  70000 | 2021-04-01 |
+|  3 | Sana |  80000 | 2020-03-01 |
++----+------+--------+------------+
+3 rows in set (0.00 sec)
+
