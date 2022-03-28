@@ -102,4 +102,22 @@ te(now());
 +----+------+--------+------------+
 1 row in set (0.00 sec)
 
-mysql>
+-----------UC6---------------
+
+mysql> update employee_payroll set gender = 'F' where id>0;
+mysql> update employee_payroll set gender = 'F' where id>1;
+mysql> update employee_payroll set gender = 'F' where id>2;
+
+
+Query OK, 1 row affected (0.14 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from employee_payroll;
++----+------------+--------+------------+--------+
+| id | name       | salary | startDate  | gender |
++----+------------+--------+------------+--------+
+|  1 | Rani       |  50000 | 2022-06-01 | F      |
+|  2 | Jia        |  70000 | 2021-04-01 | F      |
+|  3 | Sana       |  80000 | 2020-03-01 | F      |
++----+------------+--------+------------+--------+
+4 rows in set (0.00 sec)
